@@ -12,7 +12,7 @@
             </thead>
             <tbody>
             @foreach($contacts as $contact)
-                <tr>
+                <tr class="text-center align-middle text-nowrap">
                     <td>
                         {{ $contact->name }}
                         <span class="text-muted small">#{{ $contact->id }}</span>
