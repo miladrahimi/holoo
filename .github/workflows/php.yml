@@ -22,3 +22,5 @@ jobs:
           cd  ${{ secrets.PATH }}
           git reset --hard HEAD^
           git pull
+          docker exec holoo_php_1 composer install
+          docker exec holoo_php_1 php artisan migrate --force
