@@ -32,15 +32,11 @@
             @endif
 
             @if(session('error'))
-                <div class="alert alert-danger text-start">
-                    <span>{{ session('error') }}</span>
-                </div>
+                <div class="alert alert-danger text-start"><span>{{ session('error') }}</span></div>
             @endif
 
             @if(session('success'))
-                <div class="alert alert-success text-start">
-                    <span>{{ session('success') }}</span>
-                </div>
+                <div class="alert alert-success text-start"><span>{{ session('success') }}</span></div>
             @endif
 
             @yield('main')
